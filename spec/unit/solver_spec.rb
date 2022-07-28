@@ -35,29 +35,34 @@ RSpec.describe Solver do
     end
   end
 
-  fdescribe 'The fizzbuzz method' do
-    it 'Should has an integer as argument (Raise error if not)' do
+  describe 'The fizzbuzz method' do
+    it 'Should have an integer as argument (Raise error if not)' do
       expect { solver.fizzbuzz('5') }.to raise_error(TypeError)
     end
 
     it 'Should return a String' do
-      expect(solver.fizzbuzz(5).is_a?(String)).to eq(true)
+      fizzbuzz_type = solver.fizzbuzz(5).is_a?(String)
+      expect(fizzbuzz_type).to eq(true)
     end
 
     it "Should return 'fizzbuzz' if the integer is divisible by 3 and by 5" do
-      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+      fizzbuzz_of15 = solver.fizzbuzz(15)
+      expect(fizzbuzz_of15).to eq('fizzbuzz')
     end
 
     it "Should return 'fizz' if the integer is divisible by 3 but not by 5" do
-      expect(solver.fizzbuzz(6)).to eq('fizz')
+      fizzbuzz_of6 = solver.fizzbuzz(6)
+      expect(fizzbuzz_of6).to eq('fizz')
     end
 
     it "Should return 'buzz' if the integer is divisible by 5 but not by 3" do
-      expect(solver.fizzbuzz(10)).to eq('buzz')
+      fizzbuzz_of10 = solver.fizzbuzz(10)
+      expect(fizzbuzz_of10).to eq('buzz')
     end
 
     it "Should return Integer turned into string if integer isn't divisible by 3 nor 5" do
-      expect(solver.fizzbuzz(13)).to eq('13')
+      fizzbuzz_of13 = solver.fizzbuzz(13)
+      expect(fizzbuzz_of13).to eq('13')
     end
   end
 end
