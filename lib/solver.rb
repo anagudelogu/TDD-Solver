@@ -14,5 +14,7 @@ class Solver
 
   def fizzbuzz(int)
     raise TypeError unless int.is_a? Integer
+
+    ''
   end
 end
