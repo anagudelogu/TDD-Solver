@@ -1,9 +1,8 @@
 require_relative '../../lib/solver'
 
 RSpec.describe Solver do
+  let(:solver) { Solver.new }
   describe 'The factorial method' do
-    let(:solver) { Solver.new }
-
     it 'Should return 1 if the input is 0' do
       factorial_of0 = solver.factorial(0)
 
@@ -26,7 +25,10 @@ RSpec.describe Solver do
   end
 
   fdescribe 'The reverse method' do
-    it 'Should take one argument that is an string'
+    it 'Should raise an error if the argument is not a string' do
+      expect { solver.reverse(true) }.to raise_error(TypeError)
+    end
+
     it 'Should return the reversed string'
   end
 end
