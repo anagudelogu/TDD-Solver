@@ -39,7 +39,9 @@ RSpec.describe Solver do
     it 'Should has an integer as argument (Raise error if not)' do
       expect { solver.fizzbuzz('5') }.to raise_error(TypeError)
     end
-    it 'Should return a String'
+    it 'Should return a String' do
+      expect(solver.fizzbuzz(5).is_a?(String)).to eq(true)
+    end
     it "Should return 'fizzbuzz' if the integer is divisible by 3 and by 5"
     it "Should return 'fizz' if the integer is divisible by 3 but not by 5"
     it "Should return 'buzz' if the integer is divisible by 5 but not by 3"
