@@ -56,6 +56,8 @@ RSpec.describe Solver do
       expect(solver.fizzbuzz(10)).to eq('buzz')
     end
 
-    it "Should return Integer turned into string if integer isn't divisible by 3 nor 5"
+    it "Should return Integer turned into string if integer isn't divisible by 3 nor 5" do
+      expect(solver.fizzbuzz(13)).to eq('13')
+    end
   end
 end
