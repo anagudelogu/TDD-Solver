@@ -8,5 +8,7 @@ class Solver
 
   def reverse(str)
     raise TypeError unless str.is_a? String
+
+    str.reverse
   end
 end
