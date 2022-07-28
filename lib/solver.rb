@@ -5,4 +5,8 @@ class Solver
 
     factorial(int - 1) * int
   end
+
+  def reverse(str)
+    raise TypeError unless str.is_a? String
+  end
 end
