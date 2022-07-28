@@ -24,7 +24,7 @@ RSpec.describe Solver do
     end
   end
 
-  fdescribe 'The reverse method' do
+  describe 'The reverse method' do
     it 'Should raise an error if the argument is not a string' do
       expect { solver.reverse(true) }.to raise_error(TypeError)
     end
@@ -33,5 +33,14 @@ RSpec.describe Solver do
       reversed_str = solver.reverse('hello')
       expect(reversed_str).to eq('olleh')
     end
+  end
+
+  fdescribe 'The fizzbuzz method' do
+    it 'Should has an integer as argument (Raise error if not)'
+    it 'Should return a String'
+    it "Should return 'fizzbuzz' if the integer is divisible by 3 and by 5"
+    it "Should return 'fizz' if the integer is divisible by 3 but not by 5"
+    it "Should return 'buzz' if the integer is divisible by 5 but not by 3"
+    it "Should return Integer turned into string if integer isn't divisible by 3 nor 5"
   end
 end
