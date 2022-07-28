@@ -29,6 +29,8 @@ RSpec.describe Solver do
       expect { solver.reverse(true) }.to raise_error(TypeError)
     end
 
-    it 'Should return the reversed string'
+    it 'Should return the reversed string' do
+      expect(solver.reverse('hello')).to eq('olleh')
+    end
   end
 end
