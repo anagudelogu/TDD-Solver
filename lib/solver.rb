@@ -15,6 +15,8 @@ class Solver
   def fizzbuzz(int)
     raise TypeError unless int.is_a? Integer
 
+    return 'fizzbuzz' if (int % 5).zero? && (int % 3).zero?
+
     ''
   end
 end
