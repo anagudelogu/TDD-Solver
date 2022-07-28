@@ -17,6 +17,7 @@ class Solver
 
     return 'fizzbuzz' if (int % 5).zero? && (int % 3).zero?
     return 'fizz' if (int % 3).zero?
+    return 'buzz' if (int % 5).zero?
 
     ''
   end
