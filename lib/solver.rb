@@ -11,4 +11,8 @@ class Solver
 
     str.reverse
   end
+
+  def fizzbuzz(int)
+    raise TypeError unless int.is_a? Integer
+  end
 end
