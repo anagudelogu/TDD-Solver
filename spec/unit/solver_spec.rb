@@ -24,4 +24,9 @@ RSpec.describe Solver do
       expect(factorial_of9).to eq(362_880)
     end
   end
+
+  fdescribe 'The reverse method' do
+    it 'Should take one argument that is an string'
+    it 'Should return the reversed string'
+  end
 end
