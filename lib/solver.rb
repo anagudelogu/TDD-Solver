@@ -16,6 +16,7 @@ class Solver
     raise TypeError unless int.is_a? Integer
 
     return 'fizzbuzz' if (int % 5).zero? && (int % 3).zero?
+    return 'fizz' if (int % 3).zero?
 
     ''
   end
