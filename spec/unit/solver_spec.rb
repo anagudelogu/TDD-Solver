@@ -30,7 +30,8 @@ RSpec.describe Solver do
     end
 
     it 'Should return the reversed string' do
-      expect(solver.reverse('hello')).to eq('olleh')
+      reversed_str = solver.reverse('hello')
+      expect(reversed_str).to eq('olleh')
     end
   end
 end
