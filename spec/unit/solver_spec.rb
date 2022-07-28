@@ -45,7 +45,10 @@ RSpec.describe Solver do
     it "Should return 'fizzbuzz' if the integer is divisible by 3 and by 5" do
       expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
     end
-    it "Should return 'fizz' if the integer is divisible by 3 but not by 5"
+    it "Should return 'fizz' if the integer is divisible by 3 but not by 5" do
+      expect(solver.fizzbuzz(6)).to eq('fizz')
+    end
+
     it "Should return 'buzz' if the integer is divisible by 5 but not by 3"
     it "Should return Integer turned into string if integer isn't divisible by 3 nor 5"
   end
